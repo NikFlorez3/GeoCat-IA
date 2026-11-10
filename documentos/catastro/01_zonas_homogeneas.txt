@@ -1,0 +1,9 @@
+TEMA: Zonas Homogeneas Fisicas y Geoeconomicas en Colombia.
+REFERENCIA PARA CONSULTA: IGAC, instructivo de elaboracion del estudio de ZHF y ZHG. https://www.igac.gov.co/sites/default/files/listadomaestro/IN-GCT-PC03-01%20Elaboraci%C3%B3n%20del%20Estudio%20de%20ZHFYG.pdf
+NOTA: Este archivo es una sintesis didactica, NO una transcripcion literal ni una comprobacion automatica del documento enlazado.
+
+Las Zonas Homogeneas Fisicas (ZHF) agrupan sectores del territorio con caracteristicas fisicas semejantes conforme a las variables del estudio. Son unidades de zonificacion; no son identificadores individuales de predios ni definen por si solas sus linderos.
+
+Las Zonas Homogeneas Geoeconomicas (ZHG) agrupan sectores con valores unitarios de terreno semejantes, determinados mediante estudios economicos y del mercado inmobiliario. La expresion ZHGE puede encontrarse en ciertos materiales, pero en este proyecto se usa ZHG.
+
+Los estudios de zonas son insumos para procedimientos de valoracion catastral. No equivalen a tarifas ni tasas del impuesto predial. La identificacion predial, la zonificacion y la valoracion son procesos relacionados pero diferentes.

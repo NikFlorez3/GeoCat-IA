@@ -1,0 +1,7 @@
+TEMA: Identificacion espacial y valoracion de predios.
+REFERENCIA PARA CONSULTA: IGAC, informacion institucional de catastro y datos geoespaciales. https://www.igac.gov.co/datos-abiertos/datos-abiertos-geoespaciales
+NOTA: Sintesis didactica, no transcripcion literal ni verificacion de contenido en vivo.
+
+La identificacion predial combina informacion geografica y administrativa para individualizar un inmueble en el sistema catastral. Las coordenadas georreferencian la localizacion y apoyan la representacion espacial del predio.
+
+La valoracion predial utiliza informacion fisica, economica y de localizacion, entre otros insumos segun el procedimiento aplicable. Las coordenadas no determinan por si solas el valor economico, pero la localizacion espacial puede relacionarse con variables relevantes para la valoracion.

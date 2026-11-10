@@ -1,0 +1,20 @@
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Configuracion local y credenciales
+.env
+.env.*
+!.env.example

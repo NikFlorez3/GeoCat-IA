@@ -1,0 +1,7 @@
+TEMA: Sistema proyectado MAGNA-SIRGAS / Origen-Nacional.
+REFERENCIA PARA CONSULTA: IGAC, Resolucion 370 de 2021. https://www.igac.gov.co/sites/default/files/transparencia/normograma/resolucion_370_de_2021.pdf
+NOTA: Sintesis didactica, no transcripcion literal ni evaluacion de vigencia normativa.
+
+MAGNA-SIRGAS / Origen-Nacional es un sistema de coordenadas proyectadas identificado como EPSG:9377. Emplea una proyeccion Transversa de Mercator y expresa coordenadas planas en metros. Debe distinguirse del marco geodesico MAGNA-SIRGAS.
+
+La transformacion entre sistemas de coordenadas requiere identificar sistemas de origen y destino y los parametros apropiados; no deben inventarse parametros ni equivalencias EPSG.

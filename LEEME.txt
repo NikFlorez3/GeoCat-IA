@@ -1,0 +1,19 @@
+SISTEMA MULTIAGENTE V5.2 - INSTALACION EN WINDOWS
+
+1) Haz copia de seguridad del sistema_multiagente.py anterior.
+2) Extrae TODOS los archivos de este ZIP en Documents\Sistema_Multiagente.
+3) Abre PowerShell en esa carpeta.
+4) Ejecuta: python -m pip install -r requirements.txt
+5) Ejecuta: python descargar_documentos.py
+6) Si alguna descarga falla, abre FUENTES_OFICIALES.json y descarga manualmente los PDF desde los enlaces oficiales. Guarda cada PDF en documentos/catastro o documentos/geodesia, segun corresponda. La pagina de Resolucion 068 no es un PDF directo: usa su pagina para obtener el PDF y guardalo en documentos/geodesia.
+7) Ejecuta: python sistema_multiagente.py --test
+8) Ejecuta: python sistema_multiagente.py
+
+IMPORTANTE:
+- Los 4 TXT incluidos son sintesis didacticas, NO documentos oficiales completos.
+- Los PDF originales NO vienen incluidos: requieren descargarse desde IGAC, pues no fue posible obtenerlos en el entorno de preparacion.
+- El programa lee TXT y PDF locales; en PDF recupera fragmentos de paginas con coincidencia textual.
+- Los PDF escaneados sin texto seleccionable no son compatibles sin OCR.
+- El validador identifica errores conocidos, pero no certifica la exactitud factual.
+- No hay conexion real a OpenCode: es una implementacion Python + Ollama. Para cumplir un requisito de OpenCode hay que configurarlo aparte.
+- Verifica la vigencia normativa de las fuentes oficiales antes de usarlas en una entrega.

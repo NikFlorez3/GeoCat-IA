@@ -1,0 +1,7 @@
+TEMA: Marco geodesico MAGNA-SIRGAS.
+REFERENCIA PARA CONSULTA: IGAC, Resolucion 068 de 2005. https://www.igac.gov.co/transparencia-y-acceso-a-la-informacion-publica/normograma/resolucion-068-de-2005
+NOTA: Sintesis didactica, no transcripcion literal ni evaluacion de vigencia normativa.
+
+MAGNA-SIRGAS es un marco geodesico de referencia empleado en Colombia y vinculado a SIRGAS. No es sinonimo de un sistema de coordenadas proyectadas. Un marco de referencia permite referenciar posiciones y levantamientos de forma consistente.
+
+La informacion espacial georreferenciada puede utilizarse para localizar predios, relacionar cartografia y apoyar procesos de identificacion territorial. No determina por si sola el valor economico de un inmueble.

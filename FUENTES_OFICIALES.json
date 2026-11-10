@@ -1,0 +1,21 @@
+[
+  {
+    "archivo": "01_zonas_homogeneas_IGAC.pdf",
+    "especialidad": "catastro",
+    "titulo": "Instructivo de elaboracion de estudio de ZHF y ZHG",
+    "url": "https://www.igac.gov.co/sites/default/files/listadomaestro/IN-GCT-PC03-01%20Elaboraci%C3%B3n%20del%20Estudio%20de%20ZHFYG.pdf"
+  },
+  {
+    "archivo": "01_magna_sirgas_IGAC.pdf",
+    "especialidad": "geodesia",
+    "titulo": "Resolucion 068 de 2005 (pagina institucional, no PDF directo)",
+    "url": "https://www.igac.gov.co/transparencia-y-acceso-a-la-informacion-publica/normograma/resolucion-068-de-2005",
+    "descarga_automatica": false
+  },
+  {
+    "archivo": "02_origen_nacional_IGAC.pdf",
+    "especialidad": "geodesia",
+    "titulo": "Resolucion 370 de 2021",
+    "url": "https://www.igac.gov.co/sites/default/files/transparencia/normograma/resolucion_370_de_2021.pdf"
+  }
+]
