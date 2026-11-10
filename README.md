@@ -1,8 +1,8 @@
-\# GeoCat IA — Sistema Multiagente de Catastro y Geodesia
+﻿# GeoCat IA — Sistema Multiagente de Catastro y Geodesia
 
 
 
-\## Descripción del proyecto
+## Descripción del proyecto
 
 
 
@@ -14,7 +14,7 @@ Su objetivo es responder consultas técnicas relacionadas con Catastro y Geodesi
 
 
 
-\## Arquitectura del sistema
+## Arquitectura del sistema
 
 
 
@@ -22,15 +22,15 @@ El proyecto cuenta con tres componentes principales:
 
 
 
-\*\*1. Coordinador:\*\* analiza la pregunta y determina qué especialistas deben intervenir.
+**1. Coordinador:** analiza la pregunta y determina qué especialistas deben intervenir.
 
 
 
-\*\*2. Agente Catastro:\*\* atiende consultas sobre Zonas Homogéneas Físicas y Geoeconómicas, identificación predial, avalúos y gestión catastral.
+**2. Agente Catastro:** atiende consultas sobre Zonas Homogéneas Físicas y Geoeconómicas, identificación predial, avalúos y gestión catastral.
 
 
 
-\*\*3. Agente Geodesia:\*\* responde preguntas sobre MAGNA-SIRGAS, sistemas de referencia, coordenadas y proyecciones cartográficas.
+**3. Agente Geodesia:** responde preguntas sobre MAGNA-SIRGAS, sistemas de referencia, coordenadas y proyecciones cartográficas.
 
 
 
@@ -38,41 +38,41 @@ Cuando una pregunta requiere ambas especialidades, el sistema consulta a los dos
 
 
 
-\## Tecnologías utilizadas
+## Tecnologías utilizadas
 
 
 
-\- Python 3.9 o superior.
+- Python 3.9 o superior.
 
-\- Ollama para ejecutar modelos locales.
+- Ollama para ejecutar modelos locales.
 
-\- Qwen como modelo de lenguaje.
+- Qwen como modelo de lenguaje.
 
-\- OpenCode para configurar y utilizar agentes especializados.
+- OpenCode para configurar y utilizar agentes especializados.
 
-\- Documentos técnicos de referencia.
+- Documentos técnicos de referencia.
 
-\- GitHub para almacenar y compartir el proyecto.
-
-
-
-\## Funcionamiento
+- GitHub para almacenar y compartir el proyecto.
 
 
 
-1\. El usuario introduce una pregunta.
+## Funcionamiento
 
-2\. El Coordinador clasifica la consulta.
 
-3\. Se seleccionan los especialistas correspondientes.
 
-4\. Los agentes generan respuestas utilizando Qwen y documentos técnicos disponibles.
+1. El usuario introduce una pregunta.
 
-5\. Un validador comprueba errores conocidos.
+2. El Coordinador clasifica la consulta.
 
-6\. Cuando se detecta un error, el sistema realiza un intento de autocorrección.
+3. Se seleccionan los especialistas correspondientes.
 
-7\. Se presenta la respuesta aprobada o se informa si fue bloqueada.
+4. Los agentes generan respuestas utilizando Qwen y documentos técnicos disponibles.
+
+5. Un validador comprueba errores conocidos.
+
+6. Cuando se detecta un error, el sistema realiza un intento de autocorrección.
+
+7. Se presenta la respuesta aprobada o se informa si fue bloqueada.
 
 
 
@@ -80,11 +80,11 @@ La validación automática no garantiza la exactitud factual completa de las res
 
 
 
-\## Instalación y ejecución
+## Instalación y ejecución
 
 
 
-\### 1. Descargar el proyecto
+### 1. Descargar el proyecto
 
 
 
@@ -92,7 +92,7 @@ Descargar el repositorio de GitHub y descomprimirlo.
 
 
 
-\### 2. Instalar Python y Ollama
+### 2. Instalar Python y Ollama
 
 
 
@@ -100,7 +100,7 @@ Instalar Python y Ollama en el computador.
 
 
 
-\### 3. Descargar los modelos
+### 3. Descargar los modelos
 
 
 
@@ -118,7 +118,7 @@ ollama pull qwen2.5:3b
 
 
 
-\### 4. Instalar las dependencias
+### 4. Instalar las dependencias
 
 
 
@@ -134,13 +134,13 @@ python -m pip install -r requirements.txt
 
 
 
-\### 5. Ejecutar el sistema
+### 5. Ejecutar el sistema
 
 
 
 ```bash
 
-python sistema\_multiagente.py
+python sistema_multiagente.py
 
 ```
 
@@ -152,31 +152,31 @@ También se puede realizar una consulta directamente:
 
 ```bash
 
-python sistema\_multiagente.py --pregunta "¿Qué es MAGNA-SIRGAS?"
+python sistema_multiagente.py --pregunta "¿Qué es MAGNA-SIRGAS?"
 
 ```
 
 
 
-\### 6. Ejecutar las pruebas
+### 6. Ejecutar las pruebas
 
 
 
 ```bash
 
-python sistema\_multiagente.py --test
+python sistema_multiagente.py --test
 
 ```
 
 
 
-\## Estructura principal
+## Estructura principal
 
 
 
 ```text
 
-GeoCat\_IA\_Entrega/
+GeoCat_IA_Entrega/
 
 ├── .opencode/
 
@@ -194,9 +194,9 @@ GeoCat\_IA\_Entrega/
 
 │   └── geodesia/
 
-├── sistema\_multiagente.py
+├── sistema_multiagente.py
 
-├── descargar\_documentos.py
+├── descargar_documentos.py
 
 ├── opencode.json
 
@@ -208,7 +208,7 @@ GeoCat\_IA\_Entrega/
 
 
 
-\## Consideraciones
+## Consideraciones
 
 
 
@@ -220,9 +220,10 @@ El repositorio permite consultar el código, revisar la arquitectura multiagente
 
 
 
-\*\*Proyecto académico — Ingeniería Catastral y Geodesia.\*\*
+**Proyecto académico — Ingeniería Catastral y Geodesia.**
 
-\*\*Elaborado por Nikole Flórez y Diana Avendaño\*\*
+**Elaborado por Nikole Flórez y Diana Avendaño**
+
 
 
 
