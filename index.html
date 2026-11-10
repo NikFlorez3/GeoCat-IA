@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>GeoCat IA | Sistema Multiagente</title>
+  <title>GeoCat IA | Catastro y Geodesia</title>
 
   <style>
     * {
@@ -22,150 +22,114 @@
     header {
       background: #12345a;
       color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0 0 10px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    main {
+      max-width: 1400px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro h2 {
+      color: #12345a;
+    }
+
+    .agents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .agent {
+      background: white;
+      border: 1px solid #dce3ec;
+      border-radius: 12px;
       padding: 24px;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0 0 8px;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 16px;
-    }
-
-    .agents {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .agent {
-      flex: 1;
-      background: white;
-      padding: 16px;
-      border-radius: 12px;
-      text-align: center;
-      border: 1px solid #dce3ec;
-    }
-
     .agent h3 {
-      color: #12345a;
-    }
-
-    .chat {
-      background: white;
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid #dce3ec;
-    }
-
-    #messages {
-      min-height: 180px;
-      max-height: 380px;
-      overflow-y: auto;
-      padding: 20px;
-    }
-
-    .message {
-      padding: 12px 16px;
-      border-radius: 12px;
-      margin-bottom: 14px;
-      line-height: 1.5;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
-    }
-
-    .user {
-      background: #dbeafe;
-      margin-left: 15%;
-    }
-
-    .assistant {
-      background: #f1f5f9;
-      margin-right: 15%;
-    }
-
-    form {
-      display: flex;
-      gap: 10px;
-      padding: 16px;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    input {
-      flex: 1;
-      min-width: 0;
-      padding: 13px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-    }
-
-    button {
-      background: #12345a;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 20px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #21558b;
-    }
-
-    .connection {
-      text-align: center;
-      padding: 20px;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    .connection h3 {
       color: #12345a;
       margin-top: 0;
     }
 
-    .connection p {
-      line-height: 1.5;
+    .agent p {
+      line-height: 1.6;
     }
 
-    .open-app {
-      display: inline-block;
-      background: #12345a;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 9px;
-      text-decoration: none;
-      font-size: 16px;
+    .system {
+      background: white;
+      border: 1px solid #dce3ec;
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .system h2 {
+      text-align: center;
+      color: #12345a;
+      margin-top: 0;
+    }
+
+    .system p {
+      text-align: center;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    iframe {
+      width: 100%;
+      height: 780px;
+      border: none;
+      border-radius: 10px;
+      background: #111111;
+    }
+
+    .external {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .external a {
+      color: #12345a;
       font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .open-app:hover {
-      background: #21558b;
     }
 
     footer {
       text-align: center;
+      padding: 25px;
       color: #64748b;
-      padding: 20px;
       font-size: 13px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .agents {
-        flex-direction: column;
+        grid-template-columns: 1fr;
       }
 
-      form {
-        flex-direction: column;
+      header h1 {
+        font-size: 28px;
       }
 
-      .user,
-      .assistant {
-        margin: 0 0 14px;
+      iframe {
+        height: 850px;
       }
     }
   </style>
@@ -180,82 +144,65 @@
 
   <main>
 
+    <section class="intro">
+      <h2>Asistente inteligente especializado</h2>
+      <p>
+        GeoCat IA integra un Coordinador y dos agentes
+        especializados que trabajan con documentos técnicos
+        para responder consultas sobre Catastro y Geodesia.
+      </p>
+    </section>
+
     <section class="agents">
 
       <div class="agent">
         <h3>Catastro</h3>
         <p>
           Zonas Homogéneas Físicas y Geoeconómicas,
-          avalúos y gestión catastral.
+          avalúos, identificación predial y
+          gestión catastral.
         </p>
       </div>
 
       <div class="agent">
         <h3>Geodesia</h3>
         <p>
-          MAGNA-SIRGAS, coordenadas,
-          proyecciones cartográficas y
-          sistemas de referencia.
+          MAGNA-SIRGAS, sistemas de referencia,
+          coordenadas y proyecciones cartográficas.
         </p>
       </div>
 
     </section>
 
-    <section class="chat">
+    <section class="system">
 
-      <div id="messages" aria-live="polite">
+      <h2>Consulta a GeoCat IA</h2>
 
-        <div class="message assistant">
-Bienvenido a GeoCat IA.
+      <p>
+        Escribe tu pregunta en el sistema.
+        El Coordinador seleccionará los especialistas
+        correspondientes y mostrará el resultado
+        de la validación.
+      </p>
 
-Nuestro sistema cuenta con un Coordinador y
-dos agentes especializados:
+      <iframe
+        src="https://nikoleflorez-geocat-ia-agentes.hf.space"
+        title="Sistema Multiagente GeoCat IA"
+        loading="lazy"
+        allow="clipboard-write"
+      ></iframe>
 
-- Catastro
-- Geodesia
-
-Puedes realizar preguntas técnicas utilizando
-la aplicación pública.
-        </div>
-
-      </div>
-
-      <form id="chatForm">
-
-        <input
-          id="question"
-          type="text"
-          placeholder="Escribe tu pregunta..."
-          maxlength="1000"
-          required
-        >
-
-        <button id="sendButton" type="submit">
-          Enviar
-        </button>
-
-      </form>
-
-      <div class="connection">
-
-        <h3>Sistema multiagente en funcionamiento</h3>
-
+      <div class="external">
         <p>
-          Accede a la aplicación de GeoCat IA
-          para realizar preguntas y consultar
-          las respuestas generadas por los agentes
-          especializados.
+          ¿No carga la aplicación?
+          <a
+            href="https://huggingface.co/spaces/NikoleFlorez/GeoCat-IA-Agentes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abrir GeoCat IA directamente
+          </a>
         </p>
-
-        <a
-          class="open-app"
-          href="https://huggingface.co/spaces/NikoleFlorez/GeoCat-IA-Agentes"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Abrir sistema multiagente GeoCat IA
-        </a>
-
       </div>
 
     </section>
@@ -263,58 +210,8 @@ la aplicación pública.
   </main>
 
   <footer>
-    GeoCat IA | Proyecto académico
-    <p>
-      Sistema Multiagente de Catastro y Geodesia
-    </p>
+    GeoCat IA | Proyecto académico de Catastro y Geodesia
   </footer>
-
-  <script>
-
-    const form = document.getElementById("chatForm");
-    const input = document.getElementById("question");
-    const messages = document.getElementById("messages");
-
-    const APP_URL =
-      "https://huggingface.co/spaces/NikoleFlorez/GeoCat-IA-Agentes";
-
-    function addMessage(text, type) {
-
-      const element = document.createElement("div");
-
-      element.className = "message " + type;
-
-      element.textContent = text;
-
-      messages.appendChild(element);
-
-      messages.scrollTop = messages.scrollHeight;
-
-    }
-
-    form.addEventListener("submit", function(event) {
-
-      event.preventDefault();
-
-      const question = input.value.trim();
-
-      if (!question) return;
-
-      addMessage(question, "user");
-
-      input.value = "";
-
-      addMessage(
-        "Para recibir una respuesta de los agentes " +
-        "Catastro y Geodesia, abre la aplicación " +
-        "mediante el botón inferior y escribe allí " +
-        "tu pregunta.",
-        "assistant"
-      );
-
-    });
-
-  </script>
 
 </body>
 </html>
